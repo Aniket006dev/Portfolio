@@ -52,7 +52,7 @@ export const Projects = () => {
                     <p className="text-muted-foreground animate-fade-in animation-delay-200">some of the featured projects...</p>
                 </div>
                 {/* projects grid */}
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12 md:mx-12">
                     {projects.map((proj, idx) => (
                         <div key={idx} className="group border rounded-2xl overflow-hidden animate-fade-in md:row-span-1" style={{ animationDelay: `${(idx + 1) * 100}ms` }}>
                             <div className="relative overflow-hidden aspect-video">
@@ -75,7 +75,7 @@ export const Projects = () => {
                                     <h3 className="text-xl font-semibold group-hover:text-primarytransitiona-all">{proj.title}</h3>
                                     <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:translate-y-1 transition-all"/>
                                 </div>
-                                <p className="text-muted-foreground text-sm">{proj.desc}</p>
+                                <p className="text-muted-foreground text-sm ">{proj.desc}</p>
                                 <div className="flex flex-wrap gap-2">{proj.tags.map((tag, idx)=>(
                                     <span key={idx} className="px-4 py-1.5 rounded-full bg-surface text-xs font-medium border border-border/50 text-muted-foreground hover:border-primary/50  gover:text-primary transition-all duration-300">{tag}</span>
                                 ))}</div>

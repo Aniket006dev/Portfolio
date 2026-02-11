@@ -102,13 +102,17 @@ export const Hero = () => {
                             </span>
                         </div>
                         <div className="space-y-4">
-                            <h1 className="text-6xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                                Hi,
-                                I Am
+                            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+                                Building digital
+
                                 <br />
-                                 <span className="text-primary glow-text">Aniket Mishra</span>
+                                 <span className="text-primary glow-text">experience with</span>
+                                <br />
                                 
-                                <span className="font-serif italic font-normal text-white"></span>
+                                <span className="font-serif italic font-normal text-white">precision</span>
+                                <span className="block text-lg sm:text-xl md:text-2xl font-serif italic font-normal text-muted-foreground mt-3">
+      Engineering Ideas into Impact.
+    </span>
                             </h1>
                             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
                                 Full-stack developer and problem solver exploring AI to build scalable, real-world solutions.</p>

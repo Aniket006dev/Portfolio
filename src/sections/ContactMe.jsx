@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle,} from "lucide-react";
 import { Button } from "../components/Button";
 import { useState } from "react";
@@ -10,27 +9,16 @@ const contactInfo=[
         label:"Eamil",
         value:"aniket006mishra@gmail.com",
         href:"mailto:aniket006mishra@gmail.com"
-    },
-    {
-        icon:Phone,
-        label:"Phone",
-        value:"9336546396",
-        href:"tel:+919336546396"
-    },
-    {
-        icon:MapPin,
-        label:"Location",
-        value:"Lucknow, India",
-        href:"#"
-    },
-
+    }
 ];
+
 export const ContactMe=()=>{
-        const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+
   const [isLoading, setIsLoading] = useState(false);
   const [submitStatus, setSubmitStatus] = useState({
     type: null, // 'success' or 'error'
@@ -204,10 +192,10 @@ export const ContactMe=()=>{
 
           {/* Contact Info */}
           <div className="space-y-6 animate-fade-in animation-delay-400">
-            <div className="glass rounded-3xl p-8">
+            {/* <div className="glass rounded-3xl p-8">
               <h3 className="text-xl font-semibold mb-6">
                 Contact Information
-              </h3>
+              </h3> 
               <div className="space-y-4">
                 {contactInfo.map((item, i) => (
                   <a
@@ -227,10 +215,10 @@ export const ContactMe=()=>{
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Availability Card */}
-            {/* <div className="glass rounded-3xl p-8 border border-primary/30">
+            <div className="glass rounded-3xl p-8 border border-primary/30">
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                 <span className="font-medium">Currently Available</span>
@@ -240,7 +228,7 @@ export const ContactMe=()=>{
                 Whether you need a full-time engineer or a freelance consultant,
                 let's talk!
               </p>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

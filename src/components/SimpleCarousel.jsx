@@ -13,7 +13,7 @@ const Carousel = ({ highlights }) => {
   }, [highlights.length]);
 
   return (
-    <div className=" space-y-8 hidden lg:flex w-full h-full mb-10 justify-center items-center relative overflow-hidden">
+    <div className="space-y-8 hidden lg:flex w-full h-full mb-10 justify-center items-center relative overflow-hidden">
       {highlights.map((item, index) => {
         const offset = index - active;
 

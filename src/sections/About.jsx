@@ -34,10 +34,11 @@ export const About = () => {
                         <div className="animate-fade-in">
                             <span className="text-primary text-sm font-medium tracking-wider uppercase">Meet Me</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-primary">Building the future,<span className="font-serif italic font-normal text-white">One component at a time</span>
+                        <h2 className="text-4xl md:text-5xl font-semibold leading-tight animate-fade-in animation-delay-100 text-white/60">Hello there, <span className="font-serif strong font-bold text-primary ">I'm Aniket Mishra</span>
                         </h2>
                         <div className="space-y-4 text-muted-foreground animate-fade-in animation -delay-200">
-                            <p>Ambitious Computer Science student experienced in JavaScript, Java, and SQL, with a growing focus on Generative AI and LLM technologies. Driven to solve real-world problems using machine learning and strong computational thinking. Passionate about transforming ideas into structured, scalable digital solutions..</p>
+                            <p>Ambitious Computer Science student experienced in JavaScript, Java, and SQL, with a growing focus on Generative AI and LLM technologies.</p> 
+                            <p>Driven to solve real-world problems using machine learning and strong computational thinking. Passionate about transforming ideas into structured, scalable digital solutions.</p>
                         </div>
                         <div className="border rounded-2xl p-2 border-primary animate-fade-in animation-delay-300">
                             <p className="text-lg font-medium italic text-foreground text-center">Build • Learn • Optimize • Scale</p>
