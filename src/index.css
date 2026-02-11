@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+
+ @theme{
+  --color-background:#000000;
+  --color-foreground:#f8f6f6;
+
+  --color-card:#333333;
+
+  --color-primary:orange;
+  --color-primary-foreground:#ffffff;
+  
+  --color-secondary:#1f2830;
+  --color-secondary-foreground:#20b;
+
+  --color-muted:#252e37;
+  --color-muted-foreground:#7a8491;
+
+  --color-border:#242b32;
+
+  --radius: 0.75rem;
+
+  --color-heighlight:#f5a623;
+  --color-surface:#1a2329;
+
+}
+
+@layer components{
+  .glow-text{
+    text-shadow: 0 0 30px
+    color-mix(in srg , var(--color-primary)50%, transparent);
+  }
+}
+
+@layer base {
+  html{
+    scroll-behavior: smooth;
+  }
+
+  body{
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: "Inter", sans-serif;
+  }
+
+  .font-serif{
+    font-family: "Playfair Display";
+  }
+}
+
+@layer utilities{
+  @keyframes fade-in{
+    from{opacity:0;
+      transform:translateY(20px);
+      filter:blur(10px);
+    }
+    to{
+      opacit:1;
+      transform:translateY(0);
+      filters:blur(0);
+    }
+  }
+  .animate-fade-in{
+    animation:fade-in 0.8s ease-out both;
+  }
+
+  @keyframes marquee{
+    0%{
+      transform:translateX(0);
+    }
+    100%{
+      transform: translateX(-50%);
+    }
+  }
+  .animate-marquee{
+    animation: marquee 30s linear infinite;
+  }
+  .animation-delay-100{
+    animation-delay: 100ms;
+  }
+  .animation-delay-200{
+    animation-delay: 200ms;
+  }
+  .animation-delay-300{
+    animation-delay: 300ms;
+  }
+  .animation-delay-400{
+    animation-delay: 400ms;
+  }
+  .animation-delay-500{
+    animation-delay: 500ms;
+  }
+  .animation-delay-600{
+    animation-delay: 600ms;
+  }
+  .animation-delay-700{
+    animation-delay: 700ms;
+  }
+  .animation-delay-800{
+    animation-delay: 800ms;
+  }
+}
